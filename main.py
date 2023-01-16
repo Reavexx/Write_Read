@@ -2,6 +2,7 @@
 import time
 import os
 import subprocess
+import csv
 
 def main():
 
@@ -41,6 +42,9 @@ def main():
     speed = test(startTime, path)
     print ("Your disk drive speed is %s mb/sec" %speed)
 
+    with open('result_file.csv', mode='w') as csv_file:
+        fieldnames = ['Disk', 'Write Speed', 'Read Speed']
+        
 
 if __name__ == "__main__":
     main()
