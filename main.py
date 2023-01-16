@@ -1,11 +1,4 @@
 #-Write_Read_Disk-#
-#import os
-#import random
-#import dircache
-
-#dir = ''
-#filename = random.choice(dircache.listdir(dir))
-#path = os.path.join(dir, filename)
 import time
 import os
 import subprocess
